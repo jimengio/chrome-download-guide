@@ -19,9 +19,7 @@
    ""
    (merge
     base-info
-    {:styles [(<< "http://~(get-ip!):8100/main.css") "/entry/main.css"],
-     :scripts ["/client.js"],
-     :inline-styles []})))
+    {:styles ["/entry/main.css"], :scripts ["/client.js"], :inline-styles []})))
 
 (def local-bundle? (= "local-bundle" (get-env! "mode")))
 
@@ -35,7 +33,7 @@
      html-content
      (merge
       base-info
-      {:styles [(:release-ui config/site)],
+      {:styles [],
        :scripts (map #(-> % :output-name prefix-cdn) assets),
        :ssr "respo-ssr",
        :inline-styles [(slurp "./entry/main.css")]}))))
