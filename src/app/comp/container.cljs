@@ -49,12 +49,11 @@
   (<> "检测到您在使用低版本的浏览器访问，")
   (a
    {:style {:color "#2c85dd"},
-    :inner-text "建议切换到谷歌浏览器",
+    :inner-text "建议安装谷歌浏览器",
     :href "_REPL_URL_CHROME_GUIDE_",
     :target "_blank"})
   (<> "。")
-  (comment
-   span
+  (span
    {:class-name "chrome-guide-action",
     :inner-text "关闭",
     :style {:position :absolute, :right 8, :top 16, :cursor :pointer, :color "#2c85dd"}})))

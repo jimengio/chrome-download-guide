@@ -408,7 +408,7 @@
            "q" {
             :type :expr, :by "root", :at 1544595296014, :id "CXjhldG4f"
             :data {
-             "D" {:type :leaf, :by "root", :at 1544690220772, :text ";", :id "TAPp22bgX"}
+             "D" {:type :leaf, :by "root", :at 1544695991241, :text ";", :id "KQxppY87R"}
              "T" {:type :leaf, :by "root", :at 1544595300969, :text "comp-suggest", :id "CXjhldG4fleaf"}
             }
            }
@@ -833,7 +833,7 @@
               :type :expr, :by "root", :at 1544595446578, :id "W5XnsdyiN"
               :data {
                "T" {:type :leaf, :by "root", :at 1544595448395, :text ":inner-text", :id "Z-HZ9Z6uf3"}
-               "j" {:type :leaf, :by "root", :at 1544689668517, :text "\"建议切换到谷歌浏览器", :id "ooeOFpwGpi"}
+               "j" {:type :leaf, :by "root", :at 1544693362270, :text "\"建议安装谷歌浏览器", :id "ooeOFpwGpi"}
               }
              }
              "r" {
@@ -864,7 +864,6 @@
          "xj" {
           :type :expr, :by "root", :at 1544605289003, :id "2xBRMBSCxq"
           :data {
-           "D" {:type :leaf, :by "root", :at 1544689687270, :text ";", :id "hv5ec1pJpy"}
            "T" {:type :leaf, :by "root", :at 1544605371420, :text "span", :id "rDuWls6byj"}
            "j" {
             :type :expr, :by "root", :at 1544605289003, :id "XJu9TEGh1t"
