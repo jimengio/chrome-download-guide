@@ -46,24 +46,13 @@
            :font-size 16,
            :z-index 9999,
            :font-family "Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif"}}
-  (<> "本网站建议使用谷歌浏览器打开, 推荐下载: ")
+  (<> "检测到您在使用低版本的浏览器访问，")
   (a
    {:style {:color "#2c85dd"},
-    :inner-text "PC版",
-    :href "https://pc.qq.com/detail/1/detail_2661.html",
+    :inner-text "建议切换到谷歌浏览器",
+    :href "_REPL_URL_CHROME_GUIDE_",
     :target "_blank"})
-  (<> "，")
-  (a
-   {:style {:color "#2c85dd"},
-    :inner-text "移动版",
-    :href "https://android.myapp.com/myapp/detail.htm?apkName=com.android.chrome",
-    :target "_blank"})
-  (<> "，")
-  (a
-   {:style {:color "#2c85dd"},
-    :inner-text "iOS版",
-    :href "https://itunes.apple.com/us/app/google-chrome/id535886823?mt=8",
-    :target "_blank"})
+  (<> "。")
   (comment
    span
    {:class-name "chrome-guide-action",
