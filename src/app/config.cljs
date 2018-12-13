@@ -15,5 +15,5 @@
    :cdn-url "http://cdn.tiye.me/chrome-download-guide/",
    :cdn-folder "tiye.me:cdn/chrome-download-guide",
    :title "Chrome download guide",
-   :icon "http://cdn.tiye.me/logo/mvc-works.png",
+   :icon "https://jimeng.io/favicons/favicon.ico",
    :upload-folder "tiye.me:repo/chenyong/chrome-download-guide/"})

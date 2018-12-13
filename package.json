@@ -11,7 +11,8 @@
     "build-local": "shadow-cljs clj-run build.main/build-local",
     "page": "shadow-cljs clj-run build.main/page",
     "upload": "lumo -c cli/:src/ -m build.upload",
-    "ln": "cd target && rm -f entry && ln -s ../entry"
+    "ln": "cd target && rm -f entry && ln -s ../entry",
+    "zip": "yarn build-local && zip -r guide.zip dist/"
   },
   "repository": {
     "type": "git",
