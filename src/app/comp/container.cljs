@@ -34,42 +34,41 @@
  comp-suggest
  ()
  (div
-  {:class-name "chrome-guide-container",
-   :style {:position :fixed,
+  {:style {:position :fixed,
            :top 0,
            :left 0,
            :width "100%",
            :line-height "28px",
            :padding "16px 80px",
-           :background-color (hsl 50 70 70),
+           :background-color "#E9E9E9",
            :text-align :center,
-           :color (hsl 0 0 50),
+           :color "#323232",
            :font-size 16,
            :z-index 9999,
            :font-family "Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif"}}
   (<> "本网站建议使用谷歌浏览器打开, 推荐下载: ")
   (a
-   {:inner-text "PC版",
+   {:style {:color "#2c85dd"},
+    :inner-text "PC版",
     :href "https://pc.qq.com/detail/1/detail_2661.html",
     :target "_blank"})
   (<> "，")
   (a
-   {:inner-text "移动版",
+   {:style {:color "#2c85dd"},
+    :inner-text "移动版",
     :href "https://android.myapp.com/myapp/detail.htm?apkName=com.android.chrome",
     :target "_blank"})
   (<> "，")
   (a
-   {:inner-text "iOS版",
+   {:style {:color "#2c85dd"},
+    :inner-text "iOS版",
     :href "https://itunes.apple.com/us/app/google-chrome/id535886823?mt=8",
     :target "_blank"})
-  (span
+  (comment
+   span
    {:class-name "chrome-guide-action",
     :inner-text "关闭",
-    :style {:position :absolute,
-            :right 8,
-            :top 16,
-            :cursor :pointer,
-            :color "hsl(210, 89%, 52%)"}})))
+    :style {:position :absolute, :right 8, :top 16, :cursor :pointer, :color "#2c85dd"}})))
 
 (defcomp
  comp-container
