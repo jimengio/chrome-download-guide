@@ -26,15 +26,16 @@
 (defn prod-page []
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
-        assets (read-string (slurp "dist/assets.edn"))
+        assets (comment read-string (slurp "dist/assets.edn"))
         cdn (if local-bundle? "" (:cdn-url config/site))
-        prefix-cdn (fn [x] (str cdn x))]
+        prefix-cdn (fn [x] (str cdn x))
+        scripts (comment map #(-> % :output-name prefix-cdn) assets)]
     (make-page
      html-content
      (merge
       base-info
       {:styles [],
-       :scripts (map #(-> % :output-name prefix-cdn) assets),
+       :scripts [],
        :ssr "respo-ssr",
        :inline-styles [(slurp "./entry/main.css")]}))))
 
